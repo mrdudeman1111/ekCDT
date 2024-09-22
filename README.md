@@ -12,7 +12,7 @@
     #include "ekCdt.hpp"
  ```
 
- Once the file has been included, Triangulation can be performed through the <code>ekCdt::Triangulate()</code> function. The function requires a set of two component vectors (or a casted array of 32-bit floats) to be passed along with a constraint polygon (a polygon containing all borders and holes). Here is some example usage can be seen here where we triangulate a square with square hole inside it.
+ Once the file has been included, Triangulation can be performed through the <code>ekCdt::Triangulate()</code> function. The function requires a set of two component vectors (or a casted array of 32-bit floats) to be passed along with a constraint polygon (a polygon containing all borders and holes). Here is some example usage where we triangulate a square with square hole inside it.
 
 ```
 #include <iostream>
