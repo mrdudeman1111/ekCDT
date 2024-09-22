@@ -7,9 +7,13 @@
 
  To use this header, you must define CDT_IMPL and include <b>ekCdt.hpp</b> in a source file (e.g. .CXX .CP .CPP).
 
- <code> #define CDT_IMPL <br> #include "ekCdt.hpp" </code>
+ ```
+    #define CDT_IMPL
+    #include "ekCdt.hpp"
+ ```
 
  Once the file has been included, Triangulation can be performed through the <code>ekCdt::Triangulate()</code> function. The function requires a set of two component vectors (or a casted array of 32-bit floats) to be passed along with a constraint polygon (a polygon containing all borders and holes). Here is some example usage can be seen here where we triangulate a square with square hole inside it.
+
 ```
 #include <iostream>
 #include <vector>
