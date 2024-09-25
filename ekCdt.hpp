@@ -236,7 +236,7 @@ namespace ekCdt
           return 0; // on polygon
         }
 
-        if(Point.y <= std::max(Polygon[i].Origin.Pos.y, Polygon[i].EndPoint.Pos.y) && Point.y >= std::min(Polygon[i].Origin.Pos.y, Polygon[i].EndPoint.Pos.y))
+        if(Point.y <= std::max(Polygon[i].Origin.Pos.y, Polygon[i].EndPoint.Pos.y) && Point.y > std::min(Polygon[i].Origin.Pos.y, Polygon[i].EndPoint.Pos.y))
         {
           float C = (Polygon[i].Origin.Pos.x - Point.x) * (Polygon[i].EndPoint.Pos.y - Point.y) - (Polygon[i].EndPoint.Pos.x - Point.x) * (Polygon[i].Origin.Pos.y - Point.y);
 
@@ -275,7 +275,7 @@ namespace ekCdt
           return 0; // on polygon
         }
 
-        if(Point.y <= std::max(E.Origin.Pos.y, E.EndPoint.Pos.y) && Point.y >= std::min(E.Origin.Pos.y, E.EndPoint.Pos.y))
+        if(Point.y <= std::max(E.Origin.Pos.y, E.EndPoint.Pos.y) && Point.y > std::min(E.Origin.Pos.y, E.EndPoint.Pos.y))
         {
           float C = (E.Origin.Pos.x - Point.x) * (E.EndPoint.Pos.y - Point.y) - (E.EndPoint.Pos.x - Point.x) * (E.Origin.Pos.y - Point.y);
 
