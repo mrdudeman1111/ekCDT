@@ -452,7 +452,7 @@ namespace ekCdt
 
     bool EdgesIntersect(Edge FirstEdge, Edge SecondEdge)
     {
-      if(FirstEdge.Origin == SecondEdge.Origin || FirstEdge.Origin == SecondEdge.EndPoint || FirstEdge.EndPoint == SecondEdge.Origin || FirstEdge.EndPoint == SecondEdge.EndPoint)
+      if(FirstEdge.Origin == SecondEdge.Origin || FirstEdge.EndPoint == SecondEdge.EndPoint || FirstEdge.EndPoint == SecondEdge.Origin || FirstEdge.Origin == SecondEdge.EndPoint)
       {
         return false; // the edges have a common origin/endpoint and therefore meet, but don't intersect. This could be considered an intersection, but for our purposes, we will not consider this an intersection.
       }
